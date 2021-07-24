@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import Home from './Components/Home/Home';
+import NoMatch from './Components/NoMatch/NoMatch';
 
 
 function App() {
@@ -14,9 +15,15 @@ function App() {
     <div >
      <Router>
        <Switch>
-         <Route>
+         <Route path = "/home">
            <Home></Home>
          </Route>
+         <Route exact path="/">
+          <Home></Home>
+          </Route>
+          <Route path="*">
+            <NoMatch></NoMatch>
+          </Route>
        </Switch>
      </Router>
     </div>
