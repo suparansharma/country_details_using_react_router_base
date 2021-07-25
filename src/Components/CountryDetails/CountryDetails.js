@@ -23,14 +23,15 @@ const CountryDetails = () => {
     return (
         <div>
 
-          <p> This is all about Id No{countryName} </p>
+          <p> This is all about {countryName} </p>
            <h1>Name :{country.name} </h1>
            <p>capital:{country.capital}</p>
            <p>region:{country.region}</p>
            <p>demonym:{country.demonym}</p>
            <p>area:{country.area}</p>
+           <img src={country.flag} alt="" />
         
-        <h1>Countr details</h1>
+        
 
             
         </div>
